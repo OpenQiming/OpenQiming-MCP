@@ -1,0 +1,84 @@
+# ===================================================================
+# Spring Boot configuration for the "dev" profile.
+#
+# This configuration overrides the application.yml file.
+#
+# ===================================================================
+logging:
+   #日志级别
+   level:
+      ROOT: debug
+   config: classpath:logback-spring.xml
+
+spring:
+   jackson:
+      #格式化输出
+      serialization:
+         indent_output: true
+      #时区
+      time-zone: GMT+8
+   datasource:
+      #数据库驱动
+      driverClassName: org.postgresql.Driver
+      #数据库连接
+      url: jdbc:postgresql://****:***/aes_db?currentSchema=aes_sc&useUnicode=true&characterEncoding=utf8&useSSL=false&serverTimezone=Asia/Shanghai&nullCatalogMeansCurrent=true
+      #数据库的名称
+      db-name: aes_db
+
+      #数据库连接池
+      type: com.zaxxer.hikari.HikariDataSource
+      #数据库用户名
+      username: aes_user
+      #数据库密码
+      password: ${dbPwd}
+      hikari:
+         #最大连接池数
+         maximumPoolSize: 20
+      #是否自定义配置
+      cachePrepStmts: true
+      #连接池大小
+      prepStmtCacheSize: 250
+      #单条语句最大长度
+      prepStmtCacheSqlLimit: 2048
+      #新版本MySQL支持服务器端准备，是否开启
+      useServerPrepStmts: true
+   #国际化
+   messages:
+      #配置路径
+      basename: i18n/messages
+      #字符集
+      encoding: UTF-8
+   output:
+      ansi:
+         # 根据控制台的情况确定是否输出彩色日志
+         enabled: detect
+server:
+   #端口号
+   port: 9001
+
+#加密后的密码
+dbPwd: ENC()
+
+#秘钥
+secretKey:
+#加密
+jasypt:
+   encryptor:
+      #盐加密
+      password: ${secretKey}
+
+#mybatis配置
+mybatis:
+   configLocation: classpath:/mybatis-config.xml
+   mapper-locations: classpath:/mappers/*.xml
+
+ceph:
+   logFilePath: /data/logs
+#日志存储路径
+app:
+   log:
+      path: ${ceph.logFilePath}\\${spring.application.name}
+      MaxHistory: 15
+      maxFileSize: 10MB
+      totalSizeCap: 5GB
+

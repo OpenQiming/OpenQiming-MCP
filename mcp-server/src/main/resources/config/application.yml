@@ -1,0 +1,26 @@
+# ===================================================================
+# Standard Spring Boot properties.
+# Full reference is available at:
+# http://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html
+# ===================================================================
+
+spring:
+    application:
+        name: mcp-server
+    profiles:
+         active: newhg
+    jackson:
+        serialization:
+          write-dates-as-timestamps: false
+    servlet:
+        multipart:
+            enabled: true
+            max-file-size: 931775308
+            max-request-size: 1000MB
+
+mybatis-plus:
+    # Mapper.xml 文件位置
+    mapper-locations: classpath:mappers/*Mapper.xml
+    configuration:
+        #打印执行SQL
+        log-impl: org.apache.ibatis.logging.slf4j.Slf4jImpl

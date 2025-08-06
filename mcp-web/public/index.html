@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>“启明”网络大模型（意愿自智中心）</title>
+    <link rel="icon" href="./static/favicon.ico" />
+    <!-- <link rel="stylesheet" href="./dist/css/vendors~app.css" />
+    <link rel="stylesheet" href="./dist/css/app.css" /> -->
+</head>
+
+<body>
+    <div id="app"></div>
+    <!-- <script src="./dist/js/vendors~app.2024517.js"></script>
+    <script src="./dist/js/app.2024517.js"></script> -->
+    <script type="text/javascript">
+        const verson = '1';
+        // 获取head标签，默认位置为0
+        var body = document.getElementsByTagName('body')[0]
+
+        // 创建script元素
+        var scriptUrl = document.createElement('script')
+        // 创建script语句,添加到src中
+        let url = `./dist/js/vendors~app.${verson}.js`
+        scriptUrl.src = url
+        // 添加到head标签中
+        body.appendChild(scriptUrl)
+
+        // 创建script元素
+        var scriptUrl2 = document.createElement('script')
+        // 创建script语句,添加到src中
+        let url2 = `./dist/js/app.${verson}.js`
+        scriptUrl2.src = url2
+        // 添加到head标签中
+        body.appendChild(scriptUrl2)
+
+        // 获取head标签，默认位置为0
+        var head = document.getElementsByTagName('head')[0]
+        // 创建script元素
+        var scriptUrl3 = document.createElement('link')
+        scriptUrl3.setAttribute('rel', 'stylesheet')
+        // 创建script语句,添加到src中
+        let url3 = `./dist/css/vendors~app.${verson}.css`
+        scriptUrl3.href = url3
+        // 添加到head标签中
+        head.appendChild(scriptUrl3)
+
+        // 创建script元素
+        var scriptUrl4 = document.createElement('link')
+        scriptUrl4.setAttribute('rel', 'stylesheet')
+        // 创建script语句,添加到src中
+        let url4 = `./dist/css/app.${verson}.css`
+        scriptUrl4.href = url4
+        // 添加到head标签中
+        head.appendChild(scriptUrl4)
+
+        if (false) {
+            document.onkeydown = () => {
+
+                //禁用F12
+                if (window.event && window.event.keyCode == 123) {
+                    return false;
+                    //禁用ctrl+shift+i,
+                } else if (window.event.ctrlKey && window.event.shiftKey && window.event.keyCode == 73) {
+                    return false;
+                    //屏蔽Shift+F10
+                } else if (window.event.shiftKey && window.event.keyCode == 121) {
+                    return false;
+                }
+            };
+
+            document.addEventListener('contextmenu', function (e) {
+                e.preventDefault(); // 阻止默认右键菜单
+                //   alert("右键菜单已被禁用！");
+                return false;
+            });
+        }
+
+
+
+    </script>
+</body>
+
+</html>

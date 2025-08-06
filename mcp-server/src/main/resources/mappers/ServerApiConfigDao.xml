@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.ctsi.mcp.dao.ServerApiConfigDao">
+  <resultMap id="BaseResultMap" type="cn.com.ctsi.mcp.entity.ServerApiConfig">
+    <!--@mbg.generated-->
+    <!--@Table server_api_config-->
+    <id column="seq_id" jdbcType="NUMERIC" property="seqId" />
+    <result column="api_id" jdbcType="VARCHAR" property="apiId" />
+    <result column="signed_system" jdbcType="VARCHAR" property="signedSystem" />
+    <result column="param_type" jdbcType="NUMERIC" property="paramType" />
+    <result column="param_name" jdbcType="VARCHAR" property="paramName" />
+    <result column="param_value" jdbcType="VARCHAR" property="paramValue" />
+    <result column="data_type" jdbcType="VARCHAR" property="dataType" />
+    <result column="param_position" jdbcType="VARCHAR" property="paramPosition" />
+    <result column="is_required" jdbcType="NUMERIC" property="isRequired" />
+    <result column="description" jdbcType="VARCHAR" property="description" />
+    <result column="parent_id" jdbcType="NUMERIC" property="parentId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="example_value" jdbcType="VARCHAR" property="exampleValue" />
+    <result column="supply_notes" jdbcType="VARCHAR" property="supplyNotes" />
+    <result column="access_way" jdbcType="VARCHAR" property="accessWay" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    seq_id, api_id, signed_system, param_type, param_name, param_value, data_type, param_position,
+    is_required, description, parent_id, create_time, update_time, example_value, supply_notes,
+    access_way
+  </sql>
+</mapper>

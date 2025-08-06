@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.ctsi.mcp.dao.McpToolTestDao">
+  <resultMap id="BaseResultMap" type="cn.com.ctsi.mcp.entity.McpToolTestEntity">
+    <!--@mbg.generated-->
+    <!--@Table mcp_tool_test-->
+    <id column="seq_id" jdbcType="NUMERIC" property="seqId" />
+    <result column="mcp_id" jdbcType="NUMERIC" property="mcpId" />
+    <result column="api_id" jdbcType="VARCHAR" property="apiId" />
+    <result column="api_name" jdbcType="VARCHAR" property="apiName" />
+    <result column="test_status" jdbcType="VARCHAR" property="testStatus" />
+    <result column="test_time" jdbcType="TIMESTAMP" property="testTime" />
+    <result column="execution_time" jdbcType="NUMERIC" property="executionTime" />
+    <result column="status_code" jdbcType="NUMERIC" property="statusCode" />
+    <result column="error_msg" jdbcType="VARCHAR" property="errorMsg" />
+    <result column="req_content" jdbcType="VARCHAR" property="reqContent" />
+    <result column="res_content" jdbcType="VARCHAR" property="resContent" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    seq_id, mcp_id, api_id, api_name, test_status, test_time, execution_time, status_code,
+    error_msg, req_content, res_content
+  </sql>
+</mapper>
