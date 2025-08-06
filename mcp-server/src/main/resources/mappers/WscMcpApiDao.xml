@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.ctsi.mcp.dao.WscMcpApiDao">
+  <resultMap id="BaseResultMap" type="cn.com.ctsi.mcp.entity.WscMcpApi">
+    <!--@mbg.generated-->
+    <!--@Table wsc_mcp_api-->
+    <id column="seq_id" jdbcType="NUMERIC" property="seqId" />
+    <result column="mcp_id" jdbcType="NUMERIC" property="mcpId" />
+    <result column="api_id" jdbcType="NUMERIC" property="apiId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    seq_id, mcp_id, api_id, create_time
+  </sql>
+</mapper>

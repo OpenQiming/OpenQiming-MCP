@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="cn.com.ctsi.mcp.dao.ServerApiInfoDao">
+  <resultMap id="BaseResultMap" type="cn.com.ctsi.mcp.entity.ServerApiInfo">
+    <!--@mbg.generated-->
+    <!--@Table server_api_info-->
+    <id column="api_id" jdbcType="VARCHAR" property="apiId" />
+    <result column="api_name" jdbcType="VARCHAR" property="apiName" />
+    <result column="api_type" jdbcType="VARCHAR" property="apiType" />
+    <result column="eop_protocol" jdbcType="VARCHAR" property="eopProtocol" />
+    <result column="service_protocol" jdbcType="VARCHAR" property="serviceProtocol" />
+    <result column="eop_access_address" jdbcType="VARCHAR" property="eopAccessAddress" />
+    <result column="api_describe" jdbcType="VARCHAR" property="apiDescribe" />
+    <result column="auth_policy" jdbcType="VARCHAR" property="authPolicy" />
+    <result column="timeout_duration" jdbcType="NUMERIC" property="timeoutDuration" />
+    <result column="open_range" jdbcType="VARCHAR" property="openRange" />
+    <result column="is_public_network" jdbcType="VARCHAR" property="isPublicNetwork" />
+    <result column="system" jdbcType="VARCHAR" property="system" />
+    <result column="area" jdbcType="VARCHAR" property="area" />
+    <result column="area_code" jdbcType="VARCHAR" property="areaCode" />
+    <result column="large_scene" jdbcType="VARCHAR" property="largeScene" />
+    <result column="small_scene" jdbcType="VARCHAR" property="smallScene" />
+    <result column="api_state" jdbcType="VARCHAR" property="apiState" />
+    <result column="creator_id" jdbcType="NUMERIC" property="creatorId" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="cn_api_name" jdbcType="VARCHAR" property="cnApiName" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    api_id, api_name, api_type, eop_protocol, service_protocol, eop_access_address, api_describe,
+    auth_policy, timeout_duration, open_range, is_public_network, "system", area, area_code,
+    large_scene, small_scene, api_state, creator_id, create_time, update_time, cn_api_name
+  </sql>
+</mapper>

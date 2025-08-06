@@ -1,6 +1,3 @@
-# OpenQiming-MCP
-The MCP of OpenQiming
-
 
 # MCP广场项目
 

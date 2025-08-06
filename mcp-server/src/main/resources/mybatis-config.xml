@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd"> 
+<configuration> 
+    <!-- 全局参数 --> 
+	<settings>
+		<!-- 设置但JDBC类型为空时,某些驱动程序要指定值,default:OTHER -->
+		<setting name="jdbcTypeForNull" value="NULL"/>
+
+		<!--是否开启自动驼峰命名规则（camel case）映射，即从经典数据库列名 A_COLUMN 到经典 Java 属性名 aColumn
+			的类似映射。 -->
+		<setting name="mapUnderscoreToCamelCase" value="true" />
+	</settings> 
+</configuration>

@@ -1,0 +1,215 @@
+* {
+    margin    : 0;
+    padding   : 0;
+    box-sizing: border-box;
+    outline   : none;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width   : 8px;
+    height  : 10px;
+    overflow: visible;
+}
+
+::-webkit-scrollbar-button {
+    width : 0;
+    height: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    border         : solid transparent;
+    border-width   : 1px 0;
+    background-clip: padding-box;
+    background     : #d8dce5;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-between {
+    display        : flex;
+    justify-content: space-between;
+}
+
+.flex-center {
+    display        : flex;
+    justify-content: center;
+}
+
+.flex-around {
+    display        : flex;
+    justify-content: space-around;
+}
+
+.flex-between-center {
+    display        : flex;
+    justify-content: space-between;
+    align-items    : center;
+}
+
+.flex-align-center {
+    display    : flex;
+    align-items: center;
+}
+
+.flex-center-center {
+    display        : flex;
+    justify-content: center;
+    align-items    : center;
+}
+
+.flex-wrap {
+    display  : flex;
+    flex-wrap: wrap;
+}
+
+.flex-grow {
+    flex-grow: 1;
+}
+
+.flex-shrink {
+    flex-shrink: 0;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-ellipsis {
+    overflow     : hidden;
+    white-space  : nowrap;
+    text-overflow: ellipsis;
+}
+
+.mgt10 {
+    margin-top: 10px;
+}
+
+.mgt20 {
+    margin-top: 20px;
+}
+
+.mgr6 {
+    margin-right: 6px;
+}
+
+.mgt3 {
+    margin-top: 3px;
+}
+
+.mgr10 {
+    margin-right: 10px;
+}
+
+.mgr20 {
+    margin-right: 20px;
+}
+
+.mgr30 {
+    margin-right: 30px;
+}
+
+.mgb6 {
+    margin-bottom: 6px;
+}
+
+.mgb10 {
+    margin-bottom: 10px;
+}
+
+.mgb20 {
+    margin-bottom: 20px;
+}
+
+.mgb30 {
+    margin-bottom: 30px;
+}
+
+.font12 {
+    font-size: 12px;
+}
+
+.font13 {
+    font-size: 13px;
+}
+
+.font14 {
+    font-size: 14px;
+}
+
+.font-normal {
+    font-weight: normal;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.color-default {
+    color: #606266;
+}
+
+.color-primary {
+    color: #409eff;
+}
+
+.color-success {
+    color: #67c23a;
+}
+
+.color-warning {
+    color: #e6a23c;
+}
+
+.color-danger {
+    color: #f56c6c;
+}
+
+.color-info {
+    color: #909399;
+}
+
+.width100 {
+    width: 100%;
+}
+
+.no-shadow {
+    box-shadow: none;
+}
+
+.white-word {
+    white-space: pre-wrap;
+    word-break : break-all;
+}
+
+.el-table {
+    thead {
+        color: #797979;
+    }
+
+    th.el-table__cell {
+        background-color: rgba(24, 144, 255, 0.08);
+    }
+}
+
+@font-face {
+    font-family: "YouSheBiaoTiHei";
+    src        : url('/static/fonts/YouSheBiaoTiHei-2.ttf');
+}
+
+.multi-line{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
